@@ -3,6 +3,8 @@
 
 /* CSS Geral */
 @import url("./base/geral.css");
+/* CSS Variáveis */
+@import url("./base/variaveis.css");
 
 /* CSS layout */
 @import url("./layouts/header.css");
