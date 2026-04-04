@@ -8,3 +8,7 @@
 
 /* CSS layout */
 @import url("./layouts/header.css");
+@import url("./layouts/about.css");
+@import url("./layouts/products.css");
+@import url("./layouts/newsletter.css");
+@import url("./layouts/footer.css");

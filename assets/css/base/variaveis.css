@@ -4,8 +4,11 @@
     --color-secondary: #213a56;
     --color-accent: #cdaa80;
     --color-accent-dark: #997953;
+    --color-accent-light: #F0BA46;
     --background-color: #ffffff;
     --text-color: #000000;
+    --text-color-secondary: #ffffff;
+    --text-color-hover: #333333;
 
     /* Tipografia */
     --font-family: "Poppins", sans-serif;
