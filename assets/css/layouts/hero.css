@@ -1,9 +1,83 @@
 section.hero {
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    scroll-margin-top: 80px;
 
+    background-image: url(/assets/img/img-09.jpeg);
+      background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+
+    div.container {
+        div.row {
+            div {
+                h1.hero-title {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: var(--text-color-secondary);
+                    margin-bottom: 20px;
+                }
+                p.hero-description {
+                    font-size: 1rem;
+                    color: var(--text-color-secondary);
+                    margin-bottom: 30px;
+                    max-width: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                a.btn {
+                    display: inline-block;
+                    padding: 12px 30px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    background-color: var(--color-accent);
+                    color: var(--text-color-secondary);
+
+                    &.btn-primary {
+                        background-color: var(--color-accent);
+                        border: none;
+
+                        &:hover {
+                            background-color: var(--color-accent-dark);
+                        }
+                    }
+
+                    &.btn-secondary {
+                        background-color: var(--color-accent-dark);
+                        border: none;
+
+                        &:hover {
+                            background-color: var(--color-accent);
+                        }
+                    }
+                }
+
+                div.carousel {
+                    border-radius: 15px;
+                    overflow: hidden;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+                    img {
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

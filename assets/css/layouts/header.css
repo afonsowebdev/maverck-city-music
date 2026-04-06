@@ -1,0 +1,104 @@
+header.header {
+    nav.navbar {
+        background-color: var(--background-color);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        div.container {
+            a.navbar-brand {
+                display: flex;
+                flex-direction: column;
+
+                color: var(--color-accent);
+                font-family: var(--font-family);
+                font-size: 1.2rem;
+                font-weight: 600;
+
+                span.span {
+                    color: var(--color-secondary);
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                }
+            }
+
+            button.navbar-toggler {
+                border: none;
+                background: transparent;
+                outline: none;
+
+                span.navbar-toggler-icon {
+                    font-size: 1.5rem;
+                    color: var(--primary-color);
+                }
+            }
+
+            div.offcanvas {
+                div.offcanvas-header {
+                    h5.offcanvas-title {
+                        display: flex;
+                        flex-direction: column;
+
+                        color: var(--color-accent);
+                        font-family: var(--font-family);
+                        font-size: 1.2rem;
+                        font-weight: 600;
+
+                        span.span {
+                            color: var(--color-secondary);
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                div.offcanvas-body {
+                    ul.navbar-nav {
+                        li.nav-item {
+                            a.nav-link {
+                                color: var(--text-color);
+                                font-family: var(--font-family);
+                                font-size: 1rem;
+                                font-weight: 400;
+                                cursor: pointer;
+                                transition: color 0.3s ease;
+
+                                &:hover {
+                                    color: var(--color-accent);
+                                }
+                            }
+                        }
+                    }
+
+                    div.social-links {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+
+                            color: var(--text-color-secondary);
+                            font-size: 1.2rem;
+
+                            &.facebook {
+                                background-color: #3b5998;
+                            }
+
+                            &.twitter {
+                                background-color: #1da1f2;
+                            }
+
+                            &.instagram {
+                                background-color: #e4405f;
+                            }
+
+                            &.youtube {
+                                background-color: #ff0000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
