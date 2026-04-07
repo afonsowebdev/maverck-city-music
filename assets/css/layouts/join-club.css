@@ -1,0 +1,25 @@
+section.join-club {
+    div.container {
+        div.row {
+            div.col-12 {
+                h2 {
+                    font-size: 3.2rem;
+                    font-weight: 800;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            div {
+                div.col-12 {
+                    display: flex;
+                    p {
+
+                    }
+                }
+            }
+        }
+    }
+}

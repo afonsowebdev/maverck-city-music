@@ -1,0 +1,159 @@
+section.tour {
+    padding: 100px 0;
+    background-color: var(--background-color);
+}
+
+section.tour h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section.tour p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+
+    a {
+        color: var(--color-accent);
+
+        &:hover {
+            color: var(--color-accent-dark);
+        }
+    }
+}
+
+section.tour .tour-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section.tour .tour-table thead th {
+    background-color: var(--color-accent);
+    color: var(--text-color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1rem;
+    border: none;
+}
+
+section.tour .tour-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+section.tour .tour-table tbody tr:hover {
+    background-color: rgba(205, 170, 128, 0.1);
+}
+
+section.tour .tour-table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+}
+
+section.tour .tour-table tbody td a.btn {
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+section.tour .tour-table tbody td a.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+section.tour .tour-table tbody td a.btn-outline-primary {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+section.tour .tour-table tbody td a.btn-outline-primary:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+section.tour .tour-table tbody td a.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+section.tour .tour-table tbody td a.btn-primary:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}
+
+section.tour .btn-secondary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--text-color-secondary);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+section.tour .btn-secondary:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.tour {
+        padding: 80px 0;
+    }
+
+    section.tour h2 {
+        font-size: 2rem;
+    }
+
+    section.tour p {
+        font-size: 1rem;
+    }
+
+    section.tour .tour-table {
+        font-size: 0.9rem;
+    }
+
+    section.tour .tour-table thead th,
+    section.tour .tour-table tbody td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    section.tour .tour-table tbody td a.btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section.tour {
+        padding: 60px 0;
+    }
+
+    section.tour h2 {
+        font-size: 1.8rem;
+    }
+
+    section.tour .tour-table {
+        font-size: 0.8rem;
+    }
+
+    section.tour .tour-table thead th,
+    section.tour .tour-table tbody td {
+        padding: 0.5rem 0.25rem;
+    }
+
+    section.tour .tour-table tbody td a.btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

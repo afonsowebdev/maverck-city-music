@@ -5,6 +5,8 @@
 @import url("./base/geral.css");
 /* CSS Variáveis */
 @import url("./base/variaveis.css");
+/* CSS Botões */
+@import url("./base/buttons.css");
 
 /* CSS layout */
 @import url("./layouts/hero.css");
@@ -13,4 +15,9 @@
 @import url("./layouts/members.css");
 @import url("./layouts/activities.css");
 @import url("./layouts/albums.css");
+@import url("./layouts/newsletter.css");
 @import url("./layouts/footer.css");
+
+@import url("./layouts/hero-about.css");
+@import url("./layouts/about-content.css"); 
+@import url("./layouts/join-club.css");
