@@ -26,55 +26,43 @@ section.members {
                 line-height: 1.6;
             }
         }
-        div.members-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            justify-items: center;
 
-            div.member-card {
-                background-color: var(--color-secondary);
-                border-radius: 15px;
-                overflow: hidden;
+        div.card {
+            background-color: var(--color-secondary);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
                 width: 100%;
-                max-width: 220px;
-                text-align: center;
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-                transition:
-                    transform 0.3s ease,
-                    box-shadow 0.3s ease;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
 
-                &:hover {
-                    transform: translateY(-10px);
-                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-                }
-
-                div.member-img {
-                    width: 100%;
-                    height: 150px;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        transition: transform 0.3s ease;
+            div.card-body {
+                a {
+                    h5.card-title {
+                        color: var(--text-color-secondary);
+                        font-family: var(--font-family);
+                        font-size: 1.25rem;
+                        margin-top: 1rem;
+                        font-weight: 600;
                     }
                 }
 
-                &:hover div.member-img img {
-                    transform: scale(1.1);
-                }
-
-                h3 {
-                    color: var(--text-color-secondary);
-                    font-family: var(--font-family);
-                    font-size: 1.25rem;
-                    margin-top: 1rem;
-                    font-weight: 600;
-                }
-
-                p {
+                p.card-text {
                     color: var(--text-color-secondary);
                     font-family: var(--font-family);
                     font-size: 0.9rem;
